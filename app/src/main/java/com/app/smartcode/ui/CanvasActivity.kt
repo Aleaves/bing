@@ -1,25 +1,23 @@
-package com.app.smartcode
+package com.app.smartcode.ui
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
+import com.app.smartcode.R
 import com.app.smartcode.adapter.MainAdapter
 import com.app.smartcode.entity.MainItemBean
-import com.app.smartcode.ui.CanvasActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class CanvasActivity :AppCompatActivity(){
 
     private val mAdapter = MainAdapter(getDataList())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
+        setContentView(R.layout.activity_canvas)
         recycler_view.apply {
-            val gridLayoutManager = GridLayoutManager(this@MainActivity,3)
+            val gridLayoutManager = GridLayoutManager(this@CanvasActivity,3)
 
             layoutManager = gridLayoutManager
             adapter = mAdapter
@@ -29,16 +27,16 @@ class MainActivity : AppCompatActivity() {
             when(view.id){
                 R.id.tv_item_name ->{
                     val info = mAdapter.getItem(position)
-                    val intent = Intent(this@MainActivity, Class.forName(info.className))
+                    val intent = Intent(this@CanvasActivity, Class.forName(info.className))
                     startActivity(intent)
                 }
             }
 
         }
-
     }
 
     private fun getDataList() = mutableListOf<MainItemBean>(
         MainItemBean("自定义View1", "${CanvasActivity::class.qualifiedName}")
     )
+
 }
