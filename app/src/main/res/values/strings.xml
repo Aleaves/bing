@@ -3,4 +3,5 @@
     <string name="canvas_view">自定义view</string>
     <string name="brizer_page">贝塞尔曲线</string>
     <string name="reader_page">翻书效果</string>
+    <string name="xfermode">图层混合</string>
 </resources>

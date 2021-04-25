@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class CanvasActivity :AppCompatActivity(){
 
-    private val mAdapter = MainAdapter(getDataList())
+    private val mAdapter = MainAdapter(mutableListOf())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +22,8 @@ class CanvasActivity :AppCompatActivity(){
             layoutManager = gridLayoutManager
             adapter = mAdapter
         }
+
+        mAdapter.setNewInstance(getDataList())
 
         mAdapter.setOnItemChildClickListener { adapter, view, position ->
             when(view.id){
@@ -37,8 +39,9 @@ class CanvasActivity :AppCompatActivity(){
     }
 
     private fun getDataList() = mutableListOf<MainItemBean>(
-        MainItemBean("贝塞尔曲线", "${BrizerActivity::class.qualifiedName}"),
-        MainItemBean("阅读器翻页", "${BookPageActivity::class.qualifiedName}")
+        MainItemBean(getString(R.string.brizer_page), "${BrizerActivity::class.qualifiedName}"),
+        MainItemBean(getString(R.string.reader_page), "${BookPageActivity::class.qualifiedName}"),
+        MainItemBean(getString(R.string.xfermode), "${XformodeActivity::class.qualifiedName}")
     )
 
 }

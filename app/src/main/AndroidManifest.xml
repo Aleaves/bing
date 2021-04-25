@@ -27,6 +27,10 @@
         <activity android:name=".ui.BookPageActivity"
             android:label="@string/reader_page"
             />
+
+        <activity android:name=".ui.XformodeActivity"
+            android:label="@string/xfermode"
+            />
     </application>
 
 </manifest>
