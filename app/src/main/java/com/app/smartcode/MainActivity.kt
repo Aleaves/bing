@@ -39,6 +39,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getDataList() = mutableListOf<MainItemBean>(
-        MainItemBean("自定义View1", "${CanvasActivity::class.qualifiedName}")
+        MainItemBean("自定义View", "${CanvasActivity::class.qualifiedName}")
     )
 }

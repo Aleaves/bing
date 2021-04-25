@@ -33,10 +33,12 @@ class CanvasActivity :AppCompatActivity(){
             }
 
         }
+
     }
 
     private fun getDataList() = mutableListOf<MainItemBean>(
-        MainItemBean("自定义View1", "${CanvasActivity::class.qualifiedName}")
+        MainItemBean("贝塞尔曲线", "${BrizerActivity::class.qualifiedName}"),
+        MainItemBean("阅读器翻页", "${BookPageActivity::class.qualifiedName}")
     )
 
 }

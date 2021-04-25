@@ -19,6 +19,14 @@
         <activity android:name=".ui.CanvasActivity"
             android:label="@string/canvas_view"
             />
+
+        <activity android:name=".ui.BrizerActivity"
+            android:label="@string/brizer_page"
+            />
+
+        <activity android:name=".ui.BookPageActivity"
+            android:label="@string/reader_page"
+            />
     </application>
 
 </manifest>
