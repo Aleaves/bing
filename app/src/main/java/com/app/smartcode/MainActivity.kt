@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.app.smartcode.adapter.MainAdapter
 import com.app.smartcode.entity.MainItemBean
 import com.app.smartcode.ui.CanvasActivity
+import com.app.smartcode.ui.TestSampleActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getDataList() = mutableListOf<MainItemBean>(
-        MainItemBean("自定义View", "${CanvasActivity::class.qualifiedName}")
+        MainItemBean("自定义View", "${CanvasActivity::class.qualifiedName}"),
+        MainItemBean("测试不同的UI", "${TestSampleActivity::class.qualifiedName}")
     )
 }

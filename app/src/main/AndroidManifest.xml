@@ -31,6 +31,9 @@
         <activity android:name=".ui.XformodeActivity"
             android:label="@string/xfermode"
             />
+        <activity android:name=".ui.TestSampleActivity"
+            android:label="@string/test_differ_view"
+            />
     </application>
 
 </manifest>
