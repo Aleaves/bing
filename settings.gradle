@@ -1,2 +1,2 @@
-include ':app', ':testlib'
+include ':app', ':testlib', ':module1'
 rootProject.name='smartcode'

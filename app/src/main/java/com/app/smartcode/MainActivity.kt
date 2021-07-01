@@ -3,12 +3,11 @@ package com.app.smartcode
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
 import com.app.smartcode.adapter.MainAdapter
 import com.app.smartcode.entity.MainItemBean
-import com.app.smartcode.ui.CanvasActivity
-import com.app.smartcode.ui.TestSampleActivity
+import com.app.smartcode.entity.Person
+import com.app.smartcode.ui.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -36,11 +35,17 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+        val p = Person()
+        p.clone()
 
     }
 
     private fun getDataList() = mutableListOf<MainItemBean>(
         MainItemBean("自定义View", "${CanvasActivity::class.qualifiedName}"),
-        MainItemBean("测试不同的UI", "${TestSampleActivity::class.qualifiedName}")
+        MainItemBean("测试不同的UI", "${TestSampleActivity::class.qualifiedName}"),
+        MainItemBean("ARouter路由", "${ARouterActivity::class.qualifiedName}"),
+        MainItemBean("DataBinding", "${DataBindingActivity::class.qualifiedName}"),
+        MainItemBean("RxJava", "${RxTestActivity::class.qualifiedName}")
     )
+
 }

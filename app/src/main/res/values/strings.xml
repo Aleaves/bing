@@ -5,4 +5,6 @@
     <string name="reader_page">翻书效果</string>
     <string name="xfermode">图层混合</string>
     <string name="test_differ_view">测试不同的UI</string>
+    <string name="test_data_bind">DataBinding</string>
+    <string name="test_rx">RxJava</string>
 </resources>
