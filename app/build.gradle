@@ -44,4 +44,5 @@ dependencies {
     implementation project(path: ':module1')
     implementation "io.reactivex.rxjava3:rxjava:3.0.13"
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
 }

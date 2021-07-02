@@ -45,7 +45,8 @@ class MainActivity : AppCompatActivity() {
         MainItemBean("测试不同的UI", "${TestSampleActivity::class.qualifiedName}"),
         MainItemBean("ARouter路由", "${ARouterActivity::class.qualifiedName}"),
         MainItemBean("DataBinding", "${DataBindingActivity::class.qualifiedName}"),
-        MainItemBean("RxJava", "${RxTestActivity::class.qualifiedName}")
+        MainItemBean("RxJava", "${RxTestActivity::class.qualifiedName}"),
+        MainItemBean("弹幕", "${DanmakuActivity::class.qualifiedName}")
     )
 
 }

@@ -44,6 +44,9 @@
         <activity android:name=".ui.RxTestActivity"
             android:label="@string/test_rx"
             />
+        <activity android:name=".ui.DanmakuActivity"
+            android:label="@string/page_danmuk"
+            />
     </application>
 
 </manifest>
